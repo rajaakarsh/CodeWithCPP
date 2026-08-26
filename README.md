@@ -7,8 +7,9 @@ A structured C++ learning repository featuring progressive examples, practice pr
 
 CodeWithCPP/
 ├── .vscode/                  # VS Code configuration
-├── Code/                     # Core learning modules
+├── BASIC/                    # Core learning modules
 │   ├── 2d-array/             # 2D array implementations
+│   ├── Patterns/             # Pattern printing exercises
 │   ├── STL/                  # Standard Template Library (vector, etc.)
 │   ├── array/                # 1D array operations and questions
 │   ├── basic-c/              # Core syntax & "Hello World"
@@ -71,17 +72,39 @@ g++ Code/basic-c/NamsteDuniya.cpp -o NamsteDuniya
 
 ### Basic Syntax
 cpp
-// Code/basic-c/NamsteDuniya.cpp
+// BASIC/basic-c/NamsteDuniya.cpp
 #include <iostream>
-int main() { 
+int main() {
     std::cout << "Hello Duniya" << std::endl;
     return 0;
 }
 
 
+### Pattern Printing
+cpp
+// BASIC/Patterns/1.cpp
+#include <iostream>
+using namespace std;
+void printPattern(int n){
+    for(int i=0; i<n; i++){
+        for(int j=0; j<n; j++){
+            cout << "*";
+        }
+        cout << endl;
+    }
+}   
+  
+int main() {
+    int n;
+    cout << "Enter the number of rows: ";
+    cin >> n;
+    printPattern(n);
+}
+
+
 ### Pass by Value vs. Reference
 cpp
-// Code/passbyvalue-and-refrence/main.cpp
+// BASIC/passbyvalue-and-refrence/main.cpp
 #include <iostream>
 using namespace std;
 
@@ -102,7 +125,7 @@ int main() {
 
 ### Object-Oriented Programming (Inheritance)
 cpp
-// Code/opps/Inheritance/main.cpp
+// BASIC/opps/Inheritance/main.cpp
 #include <iostream>
 using namespace std;
 
@@ -152,7 +175,7 @@ public:
 
 ### Standard Template Library (STL) - 2D Vector
 cpp
-// Code/STL/vector.cpp
+// BASIC/STL/vector.cpp
 #include <iostream>
 #include <vector>
 using namespace std;
