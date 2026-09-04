@@ -28,8 +28,8 @@ CodeWithCPP/
 │   ├── string/               # String manipulation
 │   ├── ternaryopertaors/     # Ternary operators
 │   └── variable-datatypes/   # Variables, data types, and type casting
+├── DSA/                      # Data structures and algorithms exercises
 └── problems/                 # Practice challenges and questions
-
 ## 🚀 Getting Started
 
 ### Prerequisites
