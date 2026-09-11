@@ -1,10 +1,39 @@
-
-# 💻 CodeWithCPP
+# CodeWithCPP
 
 A structured C++ learning repository featuring progressive examples, practice problems, and VS Code configurations. This project covers core programming concepts, object-oriented principles, and memory management through practical code samples.
-## 📁 Repository Structure
 
+## Table of Contents
 
+- [Features](#features)
+- [Repository Structure](#repository-structure)
+- [Prerequisites](#prerequisites)
+- [Getting Started](#getting-started)
+  - [CMake Build](#cmake-build)
+  - [Manual Compilation](#manual-compilation)
+- [Code Examples](#code-examples)
+  - [Basic Syntax](#basic-syntax)
+  - [Pattern Printing](#pattern-printing)
+  - [Pass by Value vs. Reference](#pass-by-value-vs-reference)
+  - [Object-Oriented Programming (Inheritance)](#object-oriented-programming-inheritance)
+  - [Standard Template Library (STL) - 2D Vector](#standard-template-library-stl---2d-vector)
+  - [Practice Problems - Print Counting](#practice-problems---print-counting)
+- [Troubleshooting](#troubleshooting)
+- [Contributing](#contributing)
+- [License](#license)
+- [Author](#author)
+
+## Features
+
+- **Comprehensive C++ Basics**: Covers variables, data types, operators, loops, and control flow statements.
+- **Data Structures**: Includes practical examples of 1D arrays, 2D arrays, character arrays, and strings.
+- **Advanced Concepts**: Detailed coverage of pointers, dynamic memory allocation (DML), and reference variables.
+- **Object-Oriented Programming (OOP)**: Dedicated modules for abstraction, encapsulation, inheritance, and polymorphism.
+- **Practice Problems**: Logic-building challenges including voting eligibility, day/month determination, and percentage calculation.
+- **Modern Build Tooling**: CMake-based build system and pre-configured VS Code environment.
+
+## Repository Structure
+
+```
 CodeWithCPP/
 ├── .vscode/                  # VS Code configuration
 ├── BASIC/                    # Core learning modules
@@ -30,58 +59,60 @@ CodeWithCPP/
 │   └── variable-datatypes/   # Variables, data types, and type casting
 ├── DSA/                      # Data structures and algorithms exercises
 └── problems/                 # Practice challenges and questions
-## 🚀 Getting Started
+```
 
-### Prerequisites
-Install a C++ compiler and CMake:
-- **Windows**: [MinGW-w64](https://www.mingw-w64.org/) + [CMake](https://cmake.org/)
-- **macOS**: `xcode-select --install` + `brew install cmake`
+## Prerequisites
+
+Install a C++ compiler and CMake for your operating system:
+
+- **Windows**: [MinGW-w64](https://www.mingw-w64.org/) and [CMake](https://cmake.org/)
+- **macOS**: `xcode-select --install` and `brew install cmake`
 - **Linux**: `sudo apt install build-essential cmake`
 
-### Build Process
-bash
+## Getting Started
+
+Clone the repository:
+
+```bash
 git clone https://github.com/imaakarsh/CodeWithCPP.git
 cd CodeWithCPP
+```
 
-# 🏗️ CMake Build
+### CMake Build
 
 To build the entire project using CMake, run the following commands from the root directory:
 
-bash
+```bash
 mkdir build && cd build
 cmake ..
 cmake --build .
+```
 
-# 🛠️ Manual Compilation
+### Manual Compilation
 
-Alternatively, you can compile individual C++ source files directly using `g++`:
+Alternatively, compile individual C++ source files directly using `g++`:
 
-bash
+```bash
 g++ Code/basic-c/NamsteDuniya.cpp -o NamsteDuniya
 ./NamsteDuniya
+```
 
-## 🛠️ Key Features
-
-- **Comprehensive C++ Basics**: From variables, data types, and operators to loops and control flow statements.
-- **Data Structures**: Practical examples of 1D arrays, 2D arrays, character arrays, and strings.
-- **Advanced Concepts**: Detailed coverage of pointers, dynamic memory allocation (DML), and reference variables.
-- **Object-Oriented Programming (OOP)**: Dedicated modules for Encapsulation, Inheritance, and Polymorphism.
-- **Practice Problems**: A collection of logic-building challenges including voting eligibility, day/month determination, and percentage calculation.
-- **Modern Build Tooling**: CMake-based build system and pre-configured VS Code environment.
-## 💡 Example Code
+## Code Examples
 
 ### Basic Syntax
-cpp
+
+```cpp
 // BASIC/basic-c/NamsteDuniya.cpp
 #include <iostream>
 int main() {
     std::cout << "Hello Duniya" << std::endl;
     return 0;
 }
-
+```
 
 ### Pattern Printing
-cpp
+
+```cpp
 // BASIC/Patterns/1.cpp
 #include <iostream>
 using namespace std;
@@ -100,10 +131,11 @@ int main() {
     cin >> n;
     printPattern(n);
 }
-
+```
 
 ### Pass by Value vs. Reference
-cpp
+
+```cpp
 // BASIC/passbyvalue-and-refrence/main.cpp
 #include <iostream>
 using namespace std;
@@ -121,10 +153,11 @@ int main() {
     cout << str << endl;
     return 0;
 }
-
+```
 
 ### Object-Oriented Programming (Inheritance)
-cpp
+
+```cpp
 // BASIC/opps/Inheritance/main.cpp
 #include <iostream>
 using namespace std;
@@ -171,10 +204,11 @@ public:
         cout << "Im inside Car dtor" << endl;
     }
 };
-
+```
 
 ### Standard Template Library (STL) - 2D Vector
-cpp
+
+```cpp
 // BASIC/STL/vector.cpp
 #include <iostream>
 #include <vector>
@@ -186,10 +220,11 @@ int main() {
     int totalRows = arr.size();
     return 0;
 }
-
+```
 
 ### Practice Problems - Print Counting
-cpp
+
+```cpp
 // problems/questions/206. Print Counting from 1 to Nc.cpp
 class Solution {
 public:
@@ -200,15 +235,9 @@ public:
         }
     }
 };
+```
 
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create a feature branch: `git checkout -b feature/your-topic`
-3. Submit clean, well-commented C++ code
-4. Follow C++ naming conventions
-
-## 🔧 Troubleshooting
+## Troubleshooting
 
 | Issue | Solution |
 |-------|----------|
@@ -216,11 +245,18 @@ public:
 | `Permission denied` | `chmod +x filename` on Linux/macOS |
 | Compilation errors | Specify standard: `g++ -std=c++17 file.cpp` |
 
-## 📄 License
+## Contributing
 
-MIT License - see [LICENSE](LICENSE) for details
+1. Fork the repository.
+2. Create a feature branch: `git checkout -b feature/your-topic`
+3. Submit clean, well-commented C++ code.
+4. Follow C++ naming conventions.
 
-## 👤 Author
+## License
+
+MIT License - see [LICENSE](LICENSE) for details.
+
+## Author
 
 **Akarsh**  
 GitHub: [@imaakarsh](https://github.com/imaakarsh)  
